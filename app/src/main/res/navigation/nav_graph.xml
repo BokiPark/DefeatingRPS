@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.boki.park.defeatingrps.ui.main.MainFragment"
+        android:label="MainFragment">
+
+        <action
+            android:id="@+id/main_to_game"
+            app:destination="@id/fragment_game" />
+
+        <action
+            android:id="@+id/main_to_ranking"
+            app:destination="@id/fragment_ranking" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_ranking"
+        android:name="com.boki.park.defeatingrps.ui.ranking.RankingFragment"
+        android:label="RankingFragment" />
+
+    <fragment
+        android:id="@+id/fragment_game"
+        android:name="com.boki.park.defeatingrps.ui.game.GameFragment"
+        android:label="GameFragment">
+
+        <action
+            android:id="@+id/game_to_ranking"
+            app:destination="@id/fragment_ranking"
+            app:popUpTo="@id/fragment_game"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+</navigation>

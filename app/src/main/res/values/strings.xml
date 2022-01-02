@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DefeatingRPS</string>
+    <string name="stage">Stage</string>
+    <string name="score">Score</string>
+    <string name="best">Best</string>
+    <string name="rank">Rank</string>
+    <string name="name">Name</string>
+</resources>
